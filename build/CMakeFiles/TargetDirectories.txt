@@ -1,0 +1,3 @@
+A:/NN/build/CMakeFiles/BakrNN.dir
+A:/NN/build/CMakeFiles/ALL_BUILD.dir
+A:/NN/build/CMakeFiles/ZERO_CHECK.dir
