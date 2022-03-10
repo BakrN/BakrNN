@@ -2,8 +2,8 @@
 #include <vector>
 #include <memory> 
 #include "Batch.h"	
-
-enum LayerType { // Needed layer types for YOLO 
+#include "Core.h"
+ enum class BNN_LIB LayerType { // Needed layer types for YOLO 
 	UNDEFINED, 
 	CONVOLUTIONAL,
 	MAXPOOL,
@@ -13,7 +13,7 @@ enum LayerType { // Needed layer types for YOLO
 	UPSAMPLE, 
 	YOLO 
 };
-enum NodeActivation {
+enum class BNN_LIB NodeActivation {
 	RELU,
 	SIGMOID,
 	TANH,
@@ -21,32 +21,32 @@ enum NodeActivation {
 	MISH, 
 	LEAKY 
 };
-struct ConvLayerInfo {
+struct BNN_LIB ConvLayerInfo {
 	int filter_count; 
 	int size; 
 	int stride; 
 	int padding; 
 	NodeActivation activation; 
 };
-struct RouteLayerInfo {
+struct BNN_LIB RouteLayerInfo {
 	int* RouteLayers; 
 	int RouteLayersCount; 
 
 };
-struct ShortcutLayerInfo {
+struct BNN_LIB ShortcutLayerInfo {
 	int short_layer; 
 	NodeActivation activation; 
 };
 
-struct MaxpoolLayerInfo {
+struct BNN_LIB MaxpoolLayerInfo {
 	int stride; 
 	int size; 
 
 };
-struct UpsampleLayerInfo {
+struct BNN_LIB UpsampleLayerInfo {
 	int stride;
 };
-struct YoloLayerInfo {
+struct BNN_LIB YoloLayerInfo {
 /*	mask = 0, 1, 2
 		anchors = 12, 16, 19, 36, 40, 28, 36, 75, 76, 55, 72, 146, 142, 110, 192, 243, 459, 401
 		classes = 80
@@ -62,8 +62,8 @@ struct YoloLayerInfo {
 		nms_kind = greedynms
 		beta_nms = 0.6*/
 };
-// this could be improved.. uses extra few kilobytes for NN 
-union LayerInfo {
+// this could be improved.. uses extra few kilobytes for N
+union BNN_LIB LayerInfo {
 	ConvLayerInfo ConvInfo;
 	RouteLayerInfo RouteInfo; 
 	ShortcutLayerInfo ShortcutInfo; 
@@ -71,12 +71,14 @@ union LayerInfo {
 	UpsampleLayerInfo UpsampleInfo; 
 	YoloLayerInfo YoloInfo; 
 };
-class Layer {
+class BNN_LIB Layer {
+
 private:
-	LayerType m_Type  = UNDEFINED ;
+	LayerType m_Type  = LayerType::UNDEFINED ;
 	LayerInfo m_Info; 
 	std::shared_ptr<Batch> m_Input;
 	std::shared_ptr<Batch> m_Output; 
+	float m_Bias; 
 	friend class ConvLayer;
 	friend class MaxPoolLayer; 
 	friend class RouteLayer; 
@@ -87,8 +89,6 @@ public:
 	Layer(LayerType type,const LayerInfo& info );
 	Layer(LayerType type,const LayerInfo& info , const std::shared_ptr<Batch>& input);
 	Layer(LayerType type); 
-
-	~Layer();
 	void SetInput(const std::shared_ptr<Batch>& input) { m_Input = input;  };
 	
 

@@ -1,20 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="A:\NN\src\Layer.cpp">
+    <ClCompile Include="A:\NNImplementation\NN\src\Batch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="A:\NN\src\NeuralNetwork.cpp">
+    <ClCompile Include="A:\NNImplementation\NN\src\Layer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\include\Batch.cpp" />
+    <ClCompile Include="A:\NNImplementation\NN\src\NeuralNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\NNImplementation\NN\src\OpenCLWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="A:\NN\CMakeLists.txt" />
+    <ClInclude Include="A:\NNImplementation\NN\src\include\AllLayers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\Batch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\ConvLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\Core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\Layer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\MaxPoolLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\NeuralNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\OpenCLWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\RouteLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\ShortcutLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\Upsamplelayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\NNImplementation\NN\src\include\YOLOLayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="A:\NNImplementation\NN\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{12723F35-E2A5-3FA2-8946-51195BCE4F9F}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{75B8A466-BB76-3470-8B84-A393192C35B7}</UniqueIdentifier>
+      <UniqueIdentifier>{33E29B12-4B0D-3DE8-ABA7-6C2B2309F6CB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

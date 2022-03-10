@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+A:/NNImplementation/NN/CMakeLists.txt
+A:/NNImplementation/NN/src/kernels/cachedconvkernel.cl
+A:/NNImplementation/NN/src/kernels/convkernel.cl
+A:/NNImplementation/NN/src/kernels/fckernel.cl
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCL/OpenCLConfig.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCL/OpenCLConfigVersion.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLHeaders/OpenCLHeadersConfig.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLHeaders/OpenCLHeadersTargets.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLHeadersCpp/OpenCLHeadersCppConfig.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLHeadersCpp/OpenCLHeadersCppTargets.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLICDLoader/OpenCLICDLoaderConfig.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLICDLoader/OpenCLICDLoaderTargets-debug.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLICDLoader/OpenCLICDLoaderTargets.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLUtils/OpenCLUtilsConfig.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLUtils/OpenCLUtilsTargets-debug.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLUtils/OpenCLUtilsTargets.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLUtilsCpp/OpenCLUtilsCppConfig.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLUtilsCpp/OpenCLUtilsCppTargets-debug.cmake
+A:/NNImplementation/NN/vendor/OpenCL-SDK/install/share/cmake/OpenCLUtilsCpp/OpenCLUtilsCppTargets.cmake
+A:/NNImplementation/Testing/build/CMakeFiles/cmake.verify_globs

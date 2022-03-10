@@ -1,18 +1,21 @@
-project (BakrNN)
 cmake_minimum_required(VERSION 3.10)
+project (BakrNN)
+add_definitions(-DBNN_EXPORT)
 set(CMAKE_BUILD_TYPE DEBUG)
 FILE( GLOB SOURCES "${PROJECT_SOURCE_DIR}/src/*.cpp" )
+FILE( GLOB_RECURSE HEADERS "${PROJECT_SOURCE_DIR}/src/*.h")
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include )
 
 # COPY kernals
 FILE ( GLOB KERNELS CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/src/kernels/*.cl") 
 foreach (KERNEL ${KERNELS})
-message("${KERNEL}")
 get_filename_component(kernel_name ${KERNEL} NAME)
 configure_file(${PROJECT_SOURCE_DIR}/src/kernels/${kernel_name} kernels/${kernel_name} COPYONLY)
 endforeach()
 # END
-
-#
-
-add_library(${PROJECT_NAME}  SHARED ${SOURCES}  )
+find_package(OpenCL REQUIRED PATHS "${PROJECT_SOURCE_DIR}/vendor/OpenCL-SDK/install/share/cmake/OpenCL")
+include_directories(${OpenCL_INCLUDE_DIRS})
+message("${OpenCL_INCLUDE_DIRS})")
+link_directories(${OpenCL_LIBRARY})
+add_library(${PROJECT_NAME}  SHARED ${SOURCES} ${HEADERS} )
+target_link_libraries(${PROJECT_NAME} OpenCL::OpenCL)

@@ -1,0 +1,5 @@
+A:/NNImplementation/Testing/build/CMakeFiles/NN_testing.dir
+A:/NNImplementation/Testing/build/CMakeFiles/ALL_BUILD.dir
+A:/NNImplementation/Testing/build/CMakeFiles/ZERO_CHECK.dir
+A:/NNImplementation/Testing/dependencies/CMakeFiles/BakrNN.dir
+A:/NNImplementation/Testing/dependencies/CMakeFiles/ALL_BUILD.dir

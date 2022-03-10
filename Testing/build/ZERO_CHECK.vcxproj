@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7775BE34-3A6D-391A-8C8B-2286163EC555}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ZERO_CHECK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P A:/NNImplementation/Testing/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P A:/NNImplementation/Testing/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P A:/NNImplementation/Testing/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message>Checking File Globs</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -P A:/NNImplementation/Testing/build/CMakeFiles/VerifyGlobs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="A:\NNImplementation\Testing\build\CMakeFiles\0523c3c6b9d11d691641036141107dca\generate.stamp.rule">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/NNImplementation/Testing -BA:/NNImplementation/Testing/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file A:/NNImplementation/Testing/build/NN_testing.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A:\NNImplementation\NN\CMakeLists.txt;A:\NNImplementation\NN\src\kernels\cachedconvkernel.cl;A:\NNImplementation\NN\src\kernels\convkernel.cl;A:\NNImplementation\NN\src\kernels\fckernel.cl;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfigVersion.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets.cmake;A:\NNImplementation\Testing\CMakelists.txt;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;A:\NNImplementation\Testing\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A:\NNImplementation\Testing\build\CMakeFiles\generate.stamp;A:\NNImplementation\Testing\dependencies\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/NNImplementation/Testing -BA:/NNImplementation/Testing/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file A:/NNImplementation/Testing/build/NN_testing.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A:\NNImplementation\NN\CMakeLists.txt;A:\NNImplementation\NN\src\kernels\cachedconvkernel.cl;A:\NNImplementation\NN\src\kernels\convkernel.cl;A:\NNImplementation\NN\src\kernels\fckernel.cl;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfigVersion.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets.cmake;A:\NNImplementation\Testing\CMakelists.txt;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;A:\NNImplementation\Testing\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A:\NNImplementation\Testing\build\CMakeFiles\generate.stamp;A:\NNImplementation\Testing\dependencies\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/NNImplementation/Testing -BA:/NNImplementation/Testing/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file A:/NNImplementation/Testing/build/NN_testing.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A:\NNImplementation\NN\CMakeLists.txt;A:\NNImplementation\NN\src\kernels\cachedconvkernel.cl;A:\NNImplementation\NN\src\kernels\convkernel.cl;A:\NNImplementation\NN\src\kernels\fckernel.cl;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfigVersion.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets.cmake;A:\NNImplementation\Testing\CMakelists.txt;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;A:\NNImplementation\Testing\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A:\NNImplementation\Testing\build\CMakeFiles\generate.stamp;A:\NNImplementation\Testing\dependencies\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Checking Build System</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/NNImplementation/Testing -BA:/NNImplementation/Testing/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file A:/NNImplementation/Testing/build/NN_testing.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A:\NNImplementation\NN\CMakeLists.txt;A:\NNImplementation\NN\src\kernels\cachedconvkernel.cl;A:\NNImplementation\NN\src\kernels\convkernel.cl;A:\NNImplementation\NN\src\kernels\fckernel.cl;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCL\OpenCLConfigVersion.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeaders\OpenCLHeadersTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLHeadersCpp\OpenCLHeadersCppTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLICDLoader\OpenCLICDLoaderTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtils\OpenCLUtilsTargets.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppConfig.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets-debug.cmake;A:\NNImplementation\NN\vendor\OpenCL-SDK\install\share\cmake\OpenCLUtilsCpp\OpenCLUtilsCppTargets.cmake;A:\NNImplementation\Testing\CMakelists.txt;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeCXXCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeRCCompiler.cmake;A:\NNImplementation\Testing\build\CMakeFiles\3.23.0-rc1\CMakeSystem.cmake;A:\NNImplementation\Testing\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A:\NNImplementation\Testing\build\CMakeFiles\generate.stamp;A:\NNImplementation\Testing\dependencies\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

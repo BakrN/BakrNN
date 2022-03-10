@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.1) 
+project (NN_testing)
+get_filename_component(NN_DIR ../ ABSOLUTE)
+add_subdirectory(${NN_DIR} ${PROJECT_SOURCE_DIR}/dependencies)
+
+add_executable(${PROJECT_NAME} main.cpp )
+target_link_libraries(${PROJECT_NAME} BakrNN)

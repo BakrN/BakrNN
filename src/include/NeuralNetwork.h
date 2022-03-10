@@ -1,7 +1,8 @@
 #pragma once 
 #include <string> 
 #include "Layer.h"
-class NeuralNetwork {
+#include "Core.h"
+class BNN_LIB NeuralNetwork {
 
 private:
 	std::vector<Layer> m_Layers;
