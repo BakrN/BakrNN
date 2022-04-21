@@ -24,9 +24,6 @@
     <ClInclude Include="A:\NNImplementation\NN\src\include\ConvLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="A:\NNImplementation\NN\src\include\Core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="A:\NNImplementation\NN\src\include\Layer.h">
       <Filter>Header Files</Filter>
     </ClInclude>

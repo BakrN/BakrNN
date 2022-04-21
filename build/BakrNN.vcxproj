@@ -320,7 +320,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="A:\NNImplementation\NN\src\include\AllLayers.h" />
     <ClInclude Include="A:\NNImplementation\NN\src\include\Batch.h" />
     <ClInclude Include="A:\NNImplementation\NN\src\include\ConvLayer.h" />
-    <ClInclude Include="A:\NNImplementation\NN\src\include\Core.h" />
     <ClInclude Include="A:\NNImplementation\NN\src\include\Layer.h" />
     <ClInclude Include="A:\NNImplementation\NN\src\include\MaxPoolLayer.h" />
     <ClInclude Include="A:\NNImplementation\NN\src\include\NeuralNetwork.h" />

@@ -20,9 +20,6 @@ BakrNN_BINARY_DIR:STATIC=A:/NNImplementation/NN/build
 //Value Computed by CMake
 BakrNN_IS_TOP_LEVEL:STATIC=ON
 
-//Dependencies for the target
-BakrNN_LIB_DEPENDS:STATIC=general;OpenCL::OpenCL;
-
 //Value Computed by CMake
 BakrNN_SOURCE_DIR:STATIC=A:/NNImplementation/NN
 
